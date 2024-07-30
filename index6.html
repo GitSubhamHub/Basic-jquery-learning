@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script src="jquery.js"></script>
+    <button>Click</button>
+    <p>Lorem ipsum <span>hello span</span> dolor sit amet.</p>
+    <input type="text" name="n" value="shubh">
+    <script>
+        $(document).ready(function(){
+            $('button').click(function(){
+                // alert($("p").text())
+                // alert($("p").html())
+                // alert($("input").val())
+                // $("p").text("hello users")
+                // $("p").html("<h1>hello users</h1>")
+                $("input").val("hello users")     //uncomment previously commented line one by one and check the result what happens.
+            })
+        })
+    </script>
+</body>
+</html>

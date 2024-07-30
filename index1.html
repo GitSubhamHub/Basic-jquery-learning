@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Document</title>
+</head>
+<body>
+    <script src="jquery.js"></script>
+    <button>Click</button>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <script>
+        $(document).ready(function(){
+            $('button').click(function(){
+                // $("p").first().hide(4000)
+                // $("p").last().prev().hide(4000)
+                $("p").first().next().hide(4000)    //uncomment previously commented line one by one and check the result what happens.
+            })
+        })
+    </script>
+</body>
+</html>

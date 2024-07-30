@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        span{float: left; padding: 5px; background: orange;}
+    </style>
+</head>
+<body>
+    <script src="jquery.js"></script>
+    <button>Click</button>
+    <p>
+        <span>Hello</span>
+        <span>User</span>
+        <span>Ducat</span>
+        <span>India</span>
+        <span>Noida</span>
+        <span>Sector</span>
+        <span>63</span>
+        <span>Hello</span>
+    </p>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $('span').last().hide(3000,function(){
+                    $(this).last().prev().hide(3000,arguments.callee)
+                })
+            })
+        })
+    </script>
+</body>
+</html>

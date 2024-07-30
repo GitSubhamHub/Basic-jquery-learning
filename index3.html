@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        div{height: 100px; width: 150px; background: orange; position: relative;}
+    </style>
+</head>
+<body>
+    <script src="jquery.js"></script>
+    <button>Click</button>
+   <div>Hello</div>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $('div').animate({left: "900px"},5000)
+                $('div').animate({top: "500px"},5000)
+                $('div').animate({fontSize: "50px"},5000)
+            })
+        })
+    </script>
+</body>
+</html>

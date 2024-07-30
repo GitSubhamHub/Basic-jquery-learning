@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        div{height: 100px; width: 150px; background: orange; display: none;}
+    </style>
+</head>
+<body>
+    <script src="jquery.js"></script>
+    <button>Click</button>
+   <div></div>
+   <p>Lorem ipsum dolor sit amet.</p>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $('div').fadeTo(4000,0.1)   //0.1 shows how much visible div, try to change from 0.1 to 0.5 or any_number between 0.1 to 0.9 and check result.
+                // $('div').fadeOut(4000)   
+                // $('div').fadeIn(4000)    //uncomment previously commented line one by one and check the result what happens.
+            })
+        })
+    </script>
+</body>
+</html>
